@@ -1,9 +1,7 @@
-import { Plugin, WorkspaceLeaf, setIcon } from 'obsidian';
+import {Plugin, WorkspaceLeaf, setIcon} from 'obsidian';
 
-// Remember to rename these classes and interfaces!
-export default class MyPlugin extends Plugin {
+export default class FileTabIconsPlugin extends Plugin {
 	async onload() {
-		// this.registerEvent(this.app.workspace.on('file-open', ))
 		const updateAll = () => {
 			this.updateAllLeafIcons();
 		};
